@@ -725,6 +725,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 678448545550588837, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+      propertyPath: Characters.Array.data[0].gameObject
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3123387308683997254, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -735,11 +739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5688953437149733686, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: characters.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5688953437149733686, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: characters.Array.data[0].characterName
-      value: Amelia
+      value: John Smith
       objectReference: {fileID: 0}
     - target: {fileID: 5688953437149733686, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: characters.Array.data[1].characterName
@@ -748,7 +752,7 @@ PrefabInstance:
     - target: {fileID: 5688953437149733686, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: characters.Array.data[0].characterGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1891143030}
     - target: {fileID: 5688953437149733686, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: characters.Array.data[1].characterGameObject
       value: 
@@ -808,6 +812,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2728381557873022253, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+    - {fileID: 7561302934022368158, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+    - {fileID: 7403372460626086123, guid: d48e039e0643fd848beb10345244dda6, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6134347739156631632, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       insertIndex: 4
