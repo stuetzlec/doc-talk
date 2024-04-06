@@ -287,92 +287,92 @@ namespace Convai.Scripts.Utils
 
                                 // TH
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Th * weight * alpha * weightMultiplier); // Mouth_Drop_Lower
 
                                 // DD
                                 weight = 0.2f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Dd * weight / 0.7f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Dd * weight / 0.7f * alpha * weightMultiplier); // Mouth_Shrug_Upper
 
                                 // KK
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Kk * weight / 1.5f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 1.0f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Kk * weight / 1.5f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // CH
                                 weight = 0.7f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Ch * weight / 2.7f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 1.0f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Ch * weight / 2.7f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
                                 weight = 1.0f;
                                 HeadSkinnedMeshRenderer.SetBlendShapeWeight(7 + firstIndex,
                                     _frame.Ch * weight / 2.7f * alpha * weightMultiplier); // V_Lip_Open
 
                                 // SS
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Ss * weight / 1.5f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 1.0f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Ss * weight / 1.5f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // NN
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Nn * weight / 2.0f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 1.0f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Nn * weight / 2.0f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // RR
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Rr * weight / 0.9f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // AA
                                 weight = 1.0f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Aa * weight / 2.0f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // EE
                                 weight = 0.7f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.E * weight * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 0.3f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.E * weight * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // II
                                 weight = 0.7f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex,
                                     _frame.Ih * weight / 1.2f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(117)); // Mouth_Drop_Lower
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(17)); // Mouth_Drop_Lower
                                 weight = 0.5f;
-                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex,
+                                HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex,
                                     _frame.Ih * weight / 1.2f * alpha * weightMultiplier
-                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(114)); // Mouth_Shrug_Upper
+                                    + HeadSkinnedMeshRenderer.GetBlendShapeWeight(14)); // Mouth_Shrug_Upper
 
                                 // OO
                                 weight = 1.2f;
@@ -470,17 +470,17 @@ namespace Convai.Scripts.Utils
 
                     HeadSkinnedMeshRenderer.SetBlendShapeWeight(2 + firstIndex, 0f); // V_Dental_Lip
 
-                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(117 + firstIndex, 0f); // Mouth_Drop_Lower
+                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(17 + firstIndex, 0f); // Mouth_Drop_Lower
 
                     TongueSkinnedMeshRenderer.SetBlendShapeWeight(2 + firstIndex, 0f); // V_Tongue_Out
 
-                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(114 + firstIndex, 0f); // Mouth_Shrug_Upper
+                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(14 + firstIndex, 0f); // Mouth_Shrug_Upper
 
                     HeadSkinnedMeshRenderer.SetBlendShapeWeight(7 + firstIndex, 0f); // V_Lip_Open
 
-                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(76 + firstIndex, 0f); // Mouth_Press_L
+                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(6 + firstIndex, 0f); // Mouth_Press_L
 
-                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(77 + firstIndex, 0f); // Mouth_Press_R
+                    HeadSkinnedMeshRenderer.SetBlendShapeWeight(7 + firstIndex, 0f); // Mouth_Press_R
 
                     HeadSkinnedMeshRenderer.SetBlendShapeWeight(3 + firstIndex, 0f); // V_Tight_O
 
