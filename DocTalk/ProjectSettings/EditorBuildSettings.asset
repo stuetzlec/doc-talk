@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: abefb1de075d7904b914446b801aecb2
+  - enabled: 1
+    path: Assets/Scenes/Scenario 1/Scenario1Intro.unity
+    guid: 3f915c80405674c4aac04193273f3093
+  - enabled: 1
+    path: Assets/Scenes/Scenario 1/Scenario1.unity
+    guid: 6a596fe0244e17f42af667d68fa697fd
+  - enabled: 1
+    path: Assets/Scenes/Scenario 1/Scenario1Feedback.unity
+    guid: 83ac58fc321b28a40afcd0600cec0a20
   m_configObjects:
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: a05f80c6738cfed48940a31dd9764d17, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9aaa3241601279d4d8125c4a82c9b3c5, type: 2}

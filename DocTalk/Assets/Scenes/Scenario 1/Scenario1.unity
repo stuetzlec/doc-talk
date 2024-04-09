@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2624,6 +2624,22 @@ PrefabInstance:
       propertyPath: characters.Array.data[1].characterTextColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+      propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+      propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: ed7e9532-c421-4410-a4a5-a9a53e226f66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+      propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <XRController>{RightHand}/triggerPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
+      propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Talk Key
+      objectReference: {fileID: 0}
     - target: {fileID: 6134347739156631632, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2634,11 +2650,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6134347739156631632, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.38
       objectReference: {fileID: 0}
     - target: {fileID: 6134347739156631632, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6134347739156631632, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2912,6 +2928,7 @@ GameObject:
   - component: {fileID: 1896168624}
   - component: {fileID: 1896168623}
   - component: {fileID: 1896168622}
+  - component: {fileID: 1896168625}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2993,6 +3010,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1896168625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896168621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3636bf94fae2c9f4aab283b35f3032be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTime: 300
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
