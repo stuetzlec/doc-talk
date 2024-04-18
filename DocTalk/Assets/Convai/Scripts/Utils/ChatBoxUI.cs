@@ -16,6 +16,7 @@ namespace Convai.Scripts.Utils
         private readonly List<Message> _messageList = new();
         private GameObject _chatPanel, _textObject;
         private ScrollRect _chatScrollRect;
+        private string _conversationTranscript = "";
         private Speaker _currentSpeaker;
         private bool _isFirstMessage = true;
 
@@ -26,10 +27,12 @@ namespace Convai.Scripts.Utils
         public override void Initialize(GameObject uiPrefab)
         {
             UIInstance = Instantiate(uiPrefab);
+            _conversationTranscript = "";
             _chatPanel = UIInstance.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(0).gameObject;
             _textObject = _chatPanel.transform.GetChild(0).gameObject;
             _chatScrollRect = UIInstance.transform.GetChild(0).GetChild(0).GetComponent<ScrollRect>();
             UIInstance.SetActive(false);
+            
         }
 
         /// <summary>
@@ -61,6 +64,7 @@ namespace Convai.Scripts.Utils
         {
             foreach (Message message in _messageList) Destroy(message.TextObject.gameObject);
             _messageList.Clear();
+            
         }
 
         // Helper methods and private functions are below. These are not part of the public API
@@ -213,8 +217,11 @@ namespace Convai.Scripts.Utils
                 Text = text,
                 TextObject = Instantiate(_textObject, _chatPanel.transform).GetComponent<TMP_Text>()
             };
-            newMessage.TextObject.text = FormatDialogueText(speakerName, text, speakerColor);
-            _messageList.Add(newMessage);
+            string formattedText = FormatDialogueText(speakerName, text, speakerColor);
+    newMessage.TextObject.text = formattedText;
+    _messageList.Add(newMessage);
+    _conversationTranscript += formattedText + "\n";
+    Debug.Log(_conversationTranscript);
         }
 
 
