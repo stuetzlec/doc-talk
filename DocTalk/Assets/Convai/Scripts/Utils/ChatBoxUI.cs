@@ -16,9 +16,10 @@ namespace Convai.Scripts.Utils
         private readonly List<Message> _messageList = new();
         private GameObject _chatPanel, _textObject;
         private ScrollRect _chatScrollRect;
-        private string _conversationTranscript = "";
+        public string _conversationTranscript = "";
         private Speaker _currentSpeaker;
         private bool _isFirstMessage = true;
+        
 
         /// <summary>
         ///     Initializes the chat UI with the specified prefab.
@@ -27,12 +28,44 @@ namespace Convai.Scripts.Utils
         public override void Initialize(GameObject uiPrefab)
         {
             UIInstance = Instantiate(uiPrefab);
+        
+            // Find the "Whiteboard" GameObject
+            GameObject whiteboard = GameObject.Find("Whiteboard");
+            if (whiteboard == null)
+            {
+                Debug.LogError("Whiteboard not found");
+                return;
+            }
+        
+            // Find the "ID327" GameObject within "Whiteboard"
+            Transform id327 = whiteboard.transform.Find("ID327");
+            if (id327 == null)
+            {
+                Debug.LogError("ID327 not found");
+                return;
+            }
+        
+            // Find the "Canvas" GameObject within "ID327"
+            Transform canvas = id327.Find("Canvas");
+            if (canvas == null)
+            {
+                Debug.LogError("Canvas not found");
+                return;
+            }
+        
+            // Get the Text component within "Canvas"
+            TextMeshProUGUI textComponent = canvas.GetComponentInChildren<TextMeshProUGUI>();
+            if (textComponent == null)
+            {
+                Debug.LogError("TextMeshProUGUI component not found");
+                return;
+            }
+        
+            _textObject = textComponent.gameObject;
             _conversationTranscript = "";
             _chatPanel = UIInstance.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(0).gameObject;
-            _textObject = _chatPanel.transform.GetChild(0).gameObject;
             _chatScrollRect = UIInstance.transform.GetChild(0).GetChild(0).GetComponent<ScrollRect>();
             UIInstance.SetActive(false);
-            
         }
 
         /// <summary>
@@ -221,7 +254,13 @@ namespace Convai.Scripts.Utils
     newMessage.TextObject.text = formattedText;
     _messageList.Add(newMessage);
     _conversationTranscript += formattedText + "\n";
-    Debug.Log(_conversationTranscript);
+     TextMeshProUGUI textComponent = _textObject.GetComponent<TextMeshProUGUI>();
+    if (textComponent != null)
+    {
+        textComponent.text = _conversationTranscript;
+    }
+    // Debug.Log(_conversationTranscript);
+    
         }
 
 

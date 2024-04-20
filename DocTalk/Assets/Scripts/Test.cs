@@ -177,7 +177,7 @@ Just aiming to learn and grow from this, so I’m all for your straightforward, 
         string jsonPayload = JsonUtility.ToJson(convAiPayload);
         byte[] jsonPayloadBytes = System.Text.Encoding.UTF8.GetBytes(jsonPayload);
 
-        using (UnityWebRequest webRequest = UnityWebRequest.Post(convAiApiUri, UnityWebRequest.kHttpVerbPOST))
+        using (UnityWebRequest webRequest = UnityWebRequest.PostWwwForm(convAiApiUri, UnityWebRequest.kHttpVerbPOST))
         {
             webRequest.uploadHandler = new UploadHandlerRaw(jsonPayloadBytes);
             webRequest.downloadHandler = new DownloadHandlerBuffer();
