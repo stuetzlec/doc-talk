@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -443,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d2fcc30ea6114904e88dc8808ac2d1ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d2fcc30ea6114904e88dc8808ac2d1ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1163,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d2fcc30ea6114904e88dc8808ac2d1ae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d2fcc30ea6114904e88dc8808ac2d1ae, type: 3}
       propertyPath: m_TagString
@@ -2254,8 +2254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b38e4bc919e1f040ba78aea7472893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: John Smith
-  characterID: 93ca527c-c630-11ee-b1df-42010a40000f
+  characterName: 
+  characterID: 
   sessionID: -1
   isCharacterActive: 0
   actionsHandler: {fileID: 0}
@@ -3447,7 +3447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823971713858282099, guid: cf783c8ebca5bc94e888f41e6ed850f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0999999
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2823971713858282099, guid: cf783c8ebca5bc94e888f41e6ed850f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3487,7 +3487,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3205177426941737161, guid: cf783c8ebca5bc94e888f41e6ed850f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205177426941737161, guid: cf783c8ebca5bc94e888f41e6ed850f8, type: 3}
+      propertyPath: m_TagString
+      value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 8201318371669309449, guid: cf783c8ebca5bc94e888f41e6ed850f8, type: 3}
       propertyPath: m_Avatar
@@ -3581,6 +3585,8 @@ GameObject:
   - component: {fileID: 1896168622}
   - component: {fileID: 1896168625}
   - component: {fileID: 1896168626}
+  - component: {fileID: 1896168627}
+  - component: {fileID: 1896168628}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3671,7 +3677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896168621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3636bf94fae2c9f4aab283b35f3032be, type: 3}
+  m_Script: {fileID: 11500000, guid: bd358e96ed8ffae4694cf4fbe4b32117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transitionTime: 300
@@ -3682,13 +3688,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896168621}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 972af6ef37d6ac540b985fa708cbbc7d, type: 3}
+  m_Script: {fileID: 11500000, guid: da9df06aef4add6478ae96ffa9831763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   object1: {fileID: 1203269484}
   object2: {fileID: 1799886254}
+--- !u!114 &1896168627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896168621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1912ce1344740d46ad2263854e00868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterSetup: {fileID: 1896168628}
+  characterID: 93ca527c-c630-11ee-b1df-42010a40000f
+  characterName: John Smith
+  objectName: M_2
+--- !u!114 &1896168628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896168621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcb116c54511fb4b95812924a1bae04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterID: 
+  characterName: 
+  objectName: 
 --- !u!23 &44056216669419298
 MeshRenderer:
   m_ObjectHideFlags: 0
