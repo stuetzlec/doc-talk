@@ -24,6 +24,7 @@ public class feedbackswitcher : MonoBehaviour
         // If the timer reaches zero or below, transition to the new scene
         if (timer <= 0f)
         {
+            transcriptCollector.GetTranscript();
             transcriptCollector.SaveToFile();
             LoadNextScene();
         }
