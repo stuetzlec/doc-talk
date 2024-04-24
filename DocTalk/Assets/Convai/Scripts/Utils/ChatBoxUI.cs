@@ -14,9 +14,9 @@ namespace Convai.Scripts.Utils
         private const int MAX_MESSAGES = 25;
 
         private readonly List<Message> _messageList = new();
-        private GameObject _chatPanel, _textObject;
+        public static GameObject _chatPanel, _textObject;
         private ScrollRect _chatScrollRect;
-        public string _conversationTranscript = "";
+        public static string _conversationTranscript = "";
         private Speaker _currentSpeaker;
         private bool _isFirstMessage = true;
         

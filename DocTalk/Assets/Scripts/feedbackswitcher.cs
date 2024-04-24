@@ -9,6 +9,7 @@ public class feedbackswitcher : MonoBehaviour
     public float transitionTime = 60f;
 
     private float timer;
+    public TranscriptCollector transcriptCollector;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class feedbackswitcher : MonoBehaviour
         // If the timer reaches zero or below, transition to the new scene
         if (timer <= 0f)
         {
+            transcriptCollector.SaveToFile();
             LoadNextScene();
         }
     }
