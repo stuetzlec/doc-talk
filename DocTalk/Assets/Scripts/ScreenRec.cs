@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScreenRec : MonoBehaviour
 {
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -36,10 +37,12 @@ public class ScreenRec : MonoBehaviour
 #endif
  
     }
-
+*/
     // Update is called once per frame
+  /*
     void Update()
     {
         
     }
+  */
 }
