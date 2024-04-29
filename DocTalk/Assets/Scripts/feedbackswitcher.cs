@@ -26,6 +26,7 @@ public class feedbackswitcher : MonoBehaviour
         {
             transcriptCollector.GetTranscript();
             transcriptCollector.SaveToFile();
+            transcriptCollector.FeedbackAlgo();
             LoadNextScene();
         }
     }
