@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Linq; // Query Library
 
 public class PhraseNode
 {
@@ -78,6 +79,16 @@ public class FeedbackAlgorithm
         }
     }
 
+    // Method to get the top k phrases by count
+    public List<PhraseNode> GetTopKPhrases(int k, bool fromUseCount = true)
+    {
+        var source = fromUseCount ? UseCount : AvoidCount; // Check to see where to pull from
+
+        return source.Values
+                     .OrderByDescending(node => node.Count) // Order by Count descending
+                     .Take(k)   // Take the top k
+                     .ToList(); // Convert to a list
+    }
 
     public void DisplayCounts()
     {
