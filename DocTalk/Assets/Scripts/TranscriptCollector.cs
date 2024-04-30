@@ -42,8 +42,8 @@ public class TranscriptCollector : MonoBehaviour
     File.WriteAllText(fullPath, transcript);
     }
 
-    public void FeedbackAlgo()
+    public string getTran()
     {
-        // Implement your feedback algorithm here
+        return transcript;
     }
 }
