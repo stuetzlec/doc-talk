@@ -1,11 +1,12 @@
-using System.Collections.Generic
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 public class PhraseNode
 {
-    private string Phrase { get; set; } // Phrase to search for
-    private string LastSentence { get; set; } // Last seen usage of the phrase
-
-    private int Count { get; } // Occurances
+    public string Phrase { get; set; }
+    public string LastSentence { get; set; }
+    public int Count { get; set; }
 
     public PhraseNode(string phrase, string lastSentence)
     {
@@ -14,58 +15,82 @@ public class PhraseNode
         Count = 1;
     }
 
-    public void increment(string lastSentence)
+    public void Increment(string lastSentence)
     {
         LastSentence = lastSentence;
-        Count = Count + 1
+        Count++;
     }
 }
 
 public class FeedbackAlgorithm
 {
-
-    private PriorityQueue<PhraseNode, int> PhrasesToAvoidQ; // Queue representing the most commonly seen bad phrases
-    private PriorityQueue<PhraseNode, int> PhrasesToUseQ; // Queue representing the most commonly seen good phrases
-    private Dictionary<string, PhraseNode> PhrasesToAvoidDict; // Dictionary holding references to elements in the avoid Q
-    private Dictionary<string, PhraseNode> PhrasesToUseDict;  // Dictionary holding references to elements in the use Q
-    private string[] PhrasesToUse; // Good phrases to detect
-    private string[] PhrasesToAvoid; // Bad phases to detect
+    private Dictionary<string, PhraseNode> AvoidCount { get; set; }
+    private Dictionary<string, PhraseNode> UseCount { get; set; }
+    private string[] PhrasesToUse { get; set; }
+    private string[] PhrasesToAvoid { get; set; }
 
     public FeedbackAlgorithm(string[] phrasesToUse, string[] phrasesToAvoid)
     {
-        PhrasesToAvoidQ = new PriorityQueue<PhraseNode, int>();
-        PhrasesToUseQ = new PriorityQueue<PhraseNode, int>();
-
-        PhrasesToAvoidDict = new Dictionary<string, PhraseNode>();
-        PhrasesToUseDict = new Dictionary<string, PhraseNode>();
-
-        PhrasesToAvoid = Phrases.PhrasesToAvoid;
-        PhrasesToUse = Phrases.PhrasesToUse;
+        UseCount = new Dictionary<string, PhraseNode>();
+        AvoidCount = new Dictionary<string, PhraseNode>();
+        PhrasesToUse = phrasesToUse;
+        PhrasesToAvoid = phrasesToAvoid;
     }
 
-    private void EnqueueOrUpdate(PriorityQueue<PhraseNode, int> queue, Dictionary<string, PhraseNode> dict, string phrase, string lastSentence)
+    public void Parse(string transcript)
     {
-
-        if (dict.TryGetValue(phrase, out var existingElement))
+        // Check for "use" phrases and update the dictionary
+        foreach (var phrase in PhrasesToUse)
         {
-            // If the element exists, update its count and reinsert it into the queue
-            priorityQueue.Enqueue(existingElement, int.MaxValue); // Invalidate existing priority by adding a high value
-            existingElement.Count += count;
-        }
-        else
-        {
-            // If the element doesn't exist, create a new one and add it to the dictionary
-            existingElement = new Element(phrase, count);
-            dict[phrase] = existingElement;
+            var regex = new Regex(phrase, RegexOptions.IgnoreCase);
+            var matches = regex.Matches(transcript);
+
+            foreach (Match match in matches)
+            {
+                if (UseCount.ContainsKey(phrase))
+                {
+                    UseCount[phrase].Increment(transcript);
+                }
+                else
+                {
+                    UseCount[phrase] = new PhraseNode(phrase, transcript);
+                }
+            }
         }
 
-        // Reinsert with updated count as priority
-        priorityQueue.Enqueue(existingElement, existingElement.Count);
+        // Check for "avoid" phrases and update the dictionary
+        foreach (var phrase in PhrasesToAvoid)
+        {
+            var regex = new Regex(phrase, RegexOptions.IgnoreCase);
+            var matches = regex.Matches(transcript);
+
+            foreach (Match match in matches)
+            {
+                if (AvoidCount.ContainsKey(phrase))
+                {
+                    AvoidCount[phrase].Increment(transcript);
+                }
+                else
+                {
+                    AvoidCount[phrase] = new PhraseNode(phrase, transcript);
+                }
+            }
+        }
     }
 
-    public void parse(string transcript) 
+
+    public void DisplayCounts()
     {
+        Console.WriteLine("Phrases to Use:");
+        foreach (var kvp in UseCount)
+        {
+            Console.WriteLine($"Phrase: '{kvp.Value.Phrase}', Count: {kvp.Value.Count}, Last Used In: {kvp.Value.LastSentence}");
+        }
 
+        Console.WriteLine("\nPhrases to Avoid:");
+        foreach (var kvp in AvoidCount)
+        {
+            Console.WriteLine($"Phrase: '{kvp.Value.Phrase}', Count: {kvp.Value.Count}, Last Used In: {kvp.Value.LastSentence}");
+        }
     }
-
 }
