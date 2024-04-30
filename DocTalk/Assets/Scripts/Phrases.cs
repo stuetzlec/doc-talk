@@ -1,9 +1,9 @@
 // ApologyPhrases.cs contains keywords and phrases to be tallied by the feedback collector.
 
-public static class ApologyPhrases
+public static class Phrases
 {
     // Words and phrases to avoid in apologies
-    public static readonly string[] WordsToAvoid = new string[]
+    public static readonly string[] PhrasesToAvoid = new string[]
     {
         "but",
         "however",
@@ -22,26 +22,26 @@ public static class ApologyPhrases
         "you should have",
         "you misunderstood",
         "it's not our responsibility",
-        "that's not what I meant",
-        "this is just a misunderstanding",
+        "not what I meant",
+        "misunderstanding",
         "don't take it personally",
         "calm down",
         "let's move on",
-        "I was just joking",
-        "no offense, but",
-        "I didn't mean it that way",
-        "this isn't a big deal",
-        "you're overreacting",
-        "it's your fault",
+        "joking",
+        "no offense",
+        "didn't mean it",
+        "isn't a big deal",
+        "overreacting",
+        "your fault",
         "this is how things are",
         "everyone makes mistakes"
     };
 
     // Contrapositive phrases for constructive apologies
-    public static readonly string[] ContrapositivePhrases = new string[]
+    public static readonly string[] PhrasesToUse = new string[]
     {
         "and",
-        "I understand your perspective",
+        "I understand",
         "regardless of",
         "definitely",
         "I'm certain",
@@ -50,10 +50,10 @@ public static class ApologyPhrases
         "I'm sorry for",
         "I'm sorry about",
         "we apologize for",
-        "we're taking responsibility",
+        "taking responsibility",
         "it's our responsibility",
-        "I need to correct my words",
-        "this requires immediate attention",
+        "correct my words",
+        "requires immediate attention",
         "your feelings are valid",
         "I understand your frustration",
         "let's address this",
@@ -63,10 +63,10 @@ public static class ApologyPhrases
         "your feedback is important",
         "thank you for bringing this up",
         "I recognize my mistake",
-        "how can we improve?",
+        "how can we improve",
         "I appreciate your patience",
         "I take this seriously",
-        "how can I make this right?",
+        "how can I make this right",
         "I value our relationship",
         "we're in this together",
         "everyone deserves respect"
