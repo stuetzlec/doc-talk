@@ -24,7 +24,7 @@ namespace Convai.Scripts.Utils
         [SerializeField] [Tooltip("The speed at which the player jumps.")] [Range(1, 10)]
         private float jumpSpeed = 4f;
 
-        [Header("Gravity & Grounding")] [SerializeField] [Tooltip("The gravity applied to the player.")] [Range(1, 10)]
+        [Header("Gravity & Grounding")] [SerializeField] [Tooltip("The gravity applied to the player.")] [Range(0, 10)]
         private float gravity = 9.8f;
 
         [Header("Camera Parameters")] [SerializeField] [Tooltip("The main camera the player uses.")]
