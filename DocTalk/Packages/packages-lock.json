@@ -1,32 +1,32 @@
 {
   "dependencies": {
     "com.htc.upm.wave.essence": {
-      "version": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.essence",
+      "version": "5.6.0-r.10.2",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {
         "com.htc.upm.wave.xrsdk": "5.6.0-r.10.2",
         "com.htc.upm.wave.native": "5.6.0-r.10.2"
       },
-      "hash": "8edec1329df496f4a8175856c06e3d93f66e1c80"
+      "url": "https://npm-registry.vive.com"
     },
     "com.htc.upm.wave.native": {
-      "version": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.native",
-      "depth": 0,
-      "source": "git",
+      "version": "5.6.0-r.10.2",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "com.htc.upm.wave.xrsdk": "5.6.0-r.10.2"
       },
-      "hash": "8edec1329df496f4a8175856c06e3d93f66e1c80"
+      "url": "https://npm-registry.vive.com"
     },
     "com.htc.upm.wave.xrsdk": {
-      "version": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.xrsdk",
+      "version": "5.6.0-r.10.2",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {
         "com.unity.xr.management": "3.2.4"
       },
-      "hash": "8edec1329df496f4a8175856c06e3d93f66e1c80"
+      "url": "https://npm-registry.vive.com"
     },
     "com.unity.animation.rigging": {
       "version": "1.2.1",

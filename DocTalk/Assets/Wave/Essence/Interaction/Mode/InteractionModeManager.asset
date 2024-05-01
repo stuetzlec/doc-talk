@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9550f0d385ae6a489b85692509add4e, type: 3}
   m_Name: InteractionModeManager
   m_EditorClassIdentifier: 
-  autoAddManager: 0
+  autoAddManager: 1
   addedManager: 0

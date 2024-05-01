@@ -1,8 +1,7 @@
 {
   "dependencies": {
-    "com.htc.upm.wave.essence": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.essence",
-    "com.htc.upm.wave.native": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.native",
-    "com.htc.upm.wave.xrsdk": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.xrsdk",
+    "com.htc.upm.wave.essence": "5.6.0-r.10.2",
+    "com.htc.upm.wave.xrsdk": "5.6.0-r.10.2",
     "com.unity.animation.rigging": "1.2.1",
     "com.unity.burst": "1.8.11",
     "com.unity.collab-proxy": "2.3.1",
