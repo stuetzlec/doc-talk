@@ -417,9 +417,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 32896392713692691, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 59048026461659215, guid: da0949a23568329459df87f876eba72a, type: 3}
       propertyPath: m_Radius
       value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 128150818613313010, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434163722119338741, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449139118055228943, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2065341152327336993, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420718653137224987, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3009299859666977459, guid: da0949a23568329459df87f876eba72a, type: 3}
       propertyPath: characterID
@@ -428,6 +452,10 @@ PrefabInstance:
     - target: {fileID: 3009299859666977459, guid: da0949a23568329459df87f876eba72a, type: 3}
       propertyPath: characterName
       value: Scenario 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885730066048330296, guid: da0949a23568329459df87f876eba72a, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7297705418372684535, guid: da0949a23568329459df87f876eba72a, type: 3}
       propertyPath: m_Name
