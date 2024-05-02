@@ -304,7 +304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <XRController>{RightHand}/triggerPressed
+      value: <XRController>{LeftHand}/triggerPressed
       objectReference: {fileID: 0}
     - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Action
@@ -419,7 +419,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 59048026461659215, guid: da0949a23568329459df87f876eba72a, type: 3}
       propertyPath: m_Radius
-      value: 1.05
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 3009299859666977459, guid: da0949a23568329459df87f876eba72a, type: 3}
       propertyPath: characterID
@@ -667,11 +667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b38e4bc919e1f040ba78aea7472893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1088694370 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7471202952708050064, guid: be3d9716d14868d42a47f740f224b521, type: 3}
-  m_PrefabInstance: {fileID: 1467368939}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1309433327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -880,6 +875,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2089247262}
     m_Modifications:
+    - target: {fileID: 7471202952327889118, guid: be3d9716d14868d42a47f740f224b521, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471202952327889118, guid: be3d9716d14868d42a47f740f224b521, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471202952327889118, guid: be3d9716d14868d42a47f740f224b521, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471202952327889118, guid: be3d9716d14868d42a47f740f224b521, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471202952327889118, guid: be3d9716d14868d42a47f740f224b521, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7471202952708050064, guid: be3d9716d14868d42a47f740f224b521, type: 3}
       propertyPath: m_Name
       value: Convai Player Character
@@ -894,7 +909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7471202952708050065, guid: be3d9716d14868d42a47f740f224b521, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.23
+      value: 6.32
       objectReference: {fileID: 0}
     - target: {fileID: 7471202952708050065, guid: be3d9716d14868d42a47f740f224b521, type: 3}
       propertyPath: m_LocalRotation.w
@@ -935,9 +950,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1654422485}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7471202952708050064, guid: be3d9716d14868d42a47f740f224b521, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1467368942}
     - targetCorrespondingSourceObject: {fileID: 7471202952327889107, guid: be3d9716d14868d42a47f740f224b521, type: 3}
       insertIndex: -1
       addedObject: {fileID: 338527736}
@@ -950,19 +962,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7471202952708050065, guid: be3d9716d14868d42a47f740f224b521, type: 3}
   m_PrefabInstance: {fileID: 1467368939}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1467368942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088694370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7a13629fe2e354880edca391c56ec7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionTime: 120
 --- !u!1 &1490835235
 GameObject:
   m_ObjectHideFlags: 0
