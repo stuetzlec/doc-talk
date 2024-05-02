@@ -1,4 +1,4 @@
-logType=HighQuality
+logType=Basic
 generation=G3
 isLOD=false
 qualEyes=Parallax
@@ -6,7 +6,7 @@ qualHair=TwoPass
 bakeIsBaked=false
 tempHairBake=false
 bakeCustomShaders=true
-bakeSeparatePrefab=true
+bakeSeparatePrefab=false
 shaderFlags=-9
 animationSetup=true
 animationRetargeted=2
