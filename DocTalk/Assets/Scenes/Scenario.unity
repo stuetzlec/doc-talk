@@ -304,7 +304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <XRController>{LeftHand}/triggerPressed
+      value: <XRController>{RightHand}/primaryButton
       objectReference: {fileID: 0}
     - target: {fileID: 5782767667962120657, guid: d48e039e0643fd848beb10345244dda6, type: 3}
       propertyPath: TalkKeyAction.m_SingletonActionBindings.Array.data[1].m_Action
