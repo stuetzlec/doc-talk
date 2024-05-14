@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FeedbackScene.unity
     guid: 83ac58fc321b28a40afcd0600cec0a20
-  - enabled: 0
-    path: Assets/Wave/Essence/InputModule/5.6.0-r.10.2/Demo/ControllerInput.unity
-    guid: 74887f2d7ac44e048ab3c12f167dc6f3
   m_configObjects:
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: a05f80c6738cfed48940a31dd9764d17, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9aaa3241601279d4d8125c4a82c9b3c5, type: 2}
